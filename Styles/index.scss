@@ -1,0 +1,445 @@
+@import "./breakpoints";
+@import "./colors";
+@import "./spacing";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+.first-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 10px;
+  gap: 0.5rem;
+  margin-top: 5rem;
+  @include md-down {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+  }
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.right-section h1 {
+  font-family: Plus Jakarta Sans;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-900;
+  @include md-down {
+    font-size: 2.2rem;
+  }
+  @include sm-down {
+    font-size: 2rem;
+  }
+}
+.right-section p {
+  font-family: Plus Jakarta Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-700;
+}
+.right-section a {
+  text-decoration: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: $gray-900;
+}
+.fas {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+.left-section {
+  @include md-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+.left-section img {
+  width: 100%;
+  height: 485px;
+  @include md-down {
+    height: auto;
+  }
+}
+//second component
+.second-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 20px;
+  @include md-down {
+    grid-template-columns: 1fr;
+  }
+}
+.designer-data {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  @include sm-down {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.designer-data img {
+  max-width: 143px;
+  height: 46.13px;
+  border-radius: 58px;
+  @include sm-down {
+    max-width: 80px;
+    height: 35px;
+  }
+}
+.designer-data h3 {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: $base-2;
+}
+.designer-data p {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-600;
+}
+.second-left-section {
+  @include md-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+.second-left-section img {
+  width: 100%;
+  height: 585px;
+  border-radius: 20px;
+  @include md-down {
+    height: auto;
+  }
+}
+.second-right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-inline: 30px;
+  padding-block: 10px;
+  justify-content: center;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.second-right-section img {
+  max-width: 67px;
+  height: 67px;
+}
+.designer-desc {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $base-2;
+  @include lg-down {
+    font-size: 1.4rem;
+  }
+  @include sm-down {
+    font-size: 1.2rem;
+  }
+}
+//third component
+.third-card-container {
+  background-image: url("../assetts/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 30px;
+  padding-block: 40px;
+  @include md-down {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.content {
+  display: flex;
+}
+.content img {
+  max-width: 52px;
+  height: 62px;
+  border: 1px;
+  margin-right: 25px;
+  @include sm-down {
+    max-width: 42px;
+    height: 42px;
+  }
+}
+.content h1 {
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: $base-2;
+  @include lg-down {
+    font-size: 2.5rem;
+  }
+  @include sm-down {
+    font-size: 2rem;
+    line-height: 42px;
+  }
+}
+.feature {
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: $blue-gray-5;
+  margin-top: 20px;
+  text-align: center;
+}
+.button {
+  background-color: $blue-600;
+  border: none;
+  color: $white-color;
+  text-decoration: none;
+  font-size: 1rem;
+  max-width: 234px;
+  padding: 16px;
+  border-radius: 50px;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  @include sm-down {
+    margin-top: 20px;
+  }
+}
+//four component
+.footer-container {
+  margin-top: 4rem;
+  overflow: hidden;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-inline: 20px;
+  padding-bottom: 20px;
+  gap: 3rem;
+  border-bottom: 1px solid $gray-200;
+  @include md-down {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include sm-down {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+a:hover {
+  text-decoration: none;
+  color: $blue-600;
+}
+.item h3 {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: $gray-400;
+}
+.item a {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-500;
+}
+.Badge {
+  display: flex;
+  gap: 10px;
+}
+.ts-footer-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.copyright-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  @include sm-down {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+.copyright-container img {
+  max-width: 142px;
+  height: 32px;
+}
+.copyright-container p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-400;
+}
+//fifth component
+.second-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-inline: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.second-header-container span {
+  color: $primary-700;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.second-header-container h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $gray-900;
+}
+.second-header-container p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-500;
+}
+
+.fifth-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-inline: 1rem;
+  @include md-down {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include sm-down {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.fifth-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.fifth-card img {
+  max-width: 80px;
+  height: 80px;
+}
+.description h2 {
+  font-size: $large-font;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: $gray-900;
+}
+.description span {
+  font-size: $small-font;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $primary-700;
+}
