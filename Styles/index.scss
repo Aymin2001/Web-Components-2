@@ -28,6 +28,7 @@
   flex-direction: column;
   gap: 3rem;
   justify-content: center;
+  padding-inline: 20px;
   @include md-down {
     width: 80%;
     margin: auto;
@@ -35,6 +36,7 @@
   @include sm-down {
     width: 100%;
     margin: auto;
+    gap: 2rem;
   }
 }
 .right-section h1 {
@@ -47,6 +49,7 @@
   color: $gray-900;
   @include md-down {
     font-size: 2.2rem;
+    line-height: 38px;
   }
   @include sm-down {
     font-size: 2rem;
@@ -99,6 +102,7 @@
 }
 //second component
 .second-card-container {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-inline: 20px;
@@ -806,6 +810,7 @@ a:hover {
   }
   @include sm-down {
     font-size: 2rem;
+    line-height: 48px;
   }
 }
 .nine-container p {
@@ -855,58 +860,642 @@ a:hover {
   color: black;
 }
 //tenth component
-.logos-container{
+.logos-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1.3rem;
   padding-inline: 20px;
 }
-.tenth-container{
+.tenth-container {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  gap:2rem
+  gap: 2rem;
 }
-.tenth-container p{
-font-family: Inter;
-font-size: 1rem;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: center;
-color: $gray-500;
+.tenth-container p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-500;
 }
-.logos-container img{
+.logos-container img {
   height: 40px;
 }
-.img-1{
+.img-1 {
   max-width: 274.17px;
   @include sm-down {
     max-width: 219.33px;
   }
 }
-.img-2{
+.img-2 {
   max-width: 238.33px;
   @include sm-down {
     max-width: 190.67px;
   }
 }
-.img-3{
+.img-3 {
   max-width: 180px;
   @include sm-down {
     max-width: 144px;
   }
 }
-.img-4{
+.img-4 {
   max-width: 165px;
   @include sm-down {
     max-width: 132px;
   }
 }
-.img-5{
+.img-5 {
   max-width: 115px;
   @include sm-down {
     max-width: 92px;
   }
+}
+//eleven component
+.eleven-container {
+  background-color: $blue-gray-9;
+  margin-top: 5rem;
+}
+.eleven-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7rem;
+  padding-inline: 20px;
+  padding-block: 30px;
+  @include lg-down {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+  }
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.eleven-right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.eleven-left-section {
+  height: 100%;
+  overflow: hidden;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.eleven-left-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+.signup-btn {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 10px 20px;
+  background-color: $blue-gray-8;
+  color: $white-color;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  border-radius: 35px;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  height: 60px;
+}
+
+.signup-btn img {
+  margin-right: 8px;
+}
+
+.signup-btn:hover {
+  background-color: #0056b3;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-200;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 35px;
+  border: 1px solid #334155;
+  background-color: $blue-gray-9;
+  height: 60px;
+}
+input::placeholder {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $blue-gray-4;
+  padding-left: 1rem;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: $blue-gray-9;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.custom-checkbox::after {
+  content: "\2713";
+  font-size: 0.875rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+.remember-me {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $white-color;
+}
+
+.createAcc-btn {
+  padding: 16px;
+  background-color: $blue-600;
+  color: $white-color;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  height: 55px;
+  max-width: 201px;
+}
+.eleven-right-section h1 {
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: $white-color;
+  @include lg-down {
+    font-size: 2.8rem;
+  }
+  @include sm-down {
+    font-size: 2rem;
+  }
+}
+.eleven-right-section p {
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-400;
+  @include sm-down {
+    font-size: 1rem;
+  }
+}
+.Account {
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $blue-gray-5;
+  @include sm-down {
+    font-size: 0.5rem;
+  }
+}
+.create-link {
+  text-decoration: none;
+  color: $blue-600;
+}
+//twelve component
+.twelve-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-block: 4rem;
+  padding-inline: 20px;
+  gap: 2rem;
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.flare-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include sm-down {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.twelve-left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.twelve-right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.twelve-left-section h1 {
+  font-family: Inter;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: $blue-900;
+  @include lg-down {
+    font-size: 3rem;
+  }
+}
+.twelve-left-section p {
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $blue-500;
+}
+.feature p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $blue-900;
+}
+.annual-container {
+  background-color: $white-color;
+  border: 2px solid $primary-1;
+  display: flex;
+  gap: 1.5rem;
+  padding: 20px;
+  border-radius: 20px;
+  @include sm-down {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.monthly-container {
+  background-color: $white-color;
+  display: flex;
+  gap: 1.5rem;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid $blue-200;
+  @include sm-down {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.annual-container img,
+.monthly-container img {
+  width: 40px;
+  height: 40px;
+}
+.trial {
+  background-color: $primary-1;
+  color: $white-color;
+  padding: 16px, 24px, 16px, 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 80px;
+}
+.value {
+  background-color: $primary-1;
+  color: $white-color;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: auto;
+  height: 52px;
+  text-align: center;
+  @include sm-down {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.Price-Detail h1 {
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  cursor: $blue-900;
+}
+.Price-Detail p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $blue-500;
+}
+//thirteen component
+.thirteen-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 20px;
+}
+.thirteen-container span {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $primary-700;
+}
+.thirteen-container h1 {
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $gray-900;
+}
+.thirteen-container p {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-500;
+  margin-bottom: 3rem;
+}
+.tool-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.tool-container img {
+  width: 80px;
+  height: 80px;
+  @include sm-down {
+    width: 64px;
+    height: 64px;
+  }
+}
+.integration {
+  background-color: $primary-600;
+  color: $white-color;
+  padding: 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 52px;
+  text-align: center;
+  height: 48px;
+  margin-top: 1rem;
+}
+//fourteen component
+.fourteen-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-inline: 20px;
+}
+.fourteen-container p {
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $gray-900;
+  margin-top: 4rem;
+  @include lg-down {
+    font-size: 2.5rem;
+  }
+  @include md-down {
+    font-size: 1.875rem;
+  }
+}
+.Developer-Detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.Developer-Detail h3 {
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-900;
+}
+.Developer-Detail p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-500;
+  margin: auto;
+}
+.Developer-Detail img {
+  max-width: 64px;
+  height: 64px;
+}
+.technology-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.logo-1 {
+  max-width: 97.33px;
+  height: 32px;
+}
+.logo-2 {
+  max-width: 140.83px;
+  height: 40px;
+}
+.logo-3 {
+  max-width: 183px;
+  height: 48px;
+}
+.logo-4 {
+  max-width: 133.33px;
+  height: 40px;
+}
+.logo-5 {
+  max-width: 124.67px;
+  height: 32px;
+}
+//fifteen component
+.fifteen-Card-Detail h3 {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-900;
+}
+.fifteen-Card-Detail span {
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $primary-700;
+}
+.fifteen-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
+  gap: 1rem;
+  margin-top: 5rem;
+  padding-inline: 20px;
+  @include lg-down {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.fifteen-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.fifteen-card img {
+  width: 100%;
+  height: auto;
+}
+
+.fifteen-card p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-500;
+}
+.social-links-containers {
+  display: flex;
+  gap: 1rem;
+}
+.social-links-containers i {
+  width: 24px;
+  height: 24px;
+  color: $gray-400;
 }
