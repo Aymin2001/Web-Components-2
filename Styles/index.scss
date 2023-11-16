@@ -1499,3 +1499,414 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   height: 24px;
   color: $gray-400;
 }
+//sixteen component
+.sixteen-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.sixteen-container span {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  color: $blue-600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+  text-align: center;
+}
+.sixteen-container h1 {
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -2px;
+  text-align: center;
+  color: $base-2;
+  @include sm-down {
+    font-size: 2rem;
+  }
+}
+.sixteen-card {
+  display: flex;
+  gap: 1rem;
+  padding-inline: 10px;
+  padding-block: 10px;
+  @include lg-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include md-down {
+    width: 100%;
+    margin: auto;
+  }
+  @include sm-down {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.sixteen-left-section img {
+  max-width: 239px;
+  height: 239px;
+  @include lg-down {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.sixteen-right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.Data-Info {
+  display: flex;
+  gap: 20px;
+}
+.Data-Info h3 {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: $base-2;
+}
+.Data-Info span {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $blue-gray-5;
+}
+.sixteen-right-section p {
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $base-2;
+  @include lg-down {
+    font-size: 1rem;
+  }
+}
+.sixteen-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+  @include lg-down {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.star-container i {
+  color: $blue-600;
+  max-width: 18.91px;
+  height: 18.09px;
+}
+//seventeen component
+.seventeen-container {
+  background-color: $blue-gray-2;
+  margin-top: 5rem;
+}
+.seventeen-card-container {
+  padding-inline: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: $base-2;
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+    align-items: center;
+    padding-block: 20px;
+  }
+}
+.seventeen-right-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.seventeen-left-section {
+  display: flex;
+  justify-content: center;
+}
+
+.seventeen-left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.seventeen-left-section h1 {
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -2px;
+  text-align: left;
+  color: $base-2;
+  @include sm-down {
+    font-size: 2.5rem;
+    line-height: 42px;
+  }
+}
+.seventeen-left-section p {
+  font-family: Poppins;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-900;
+}
+.button-row {
+  display: flex;
+  gap: 5px;
+  @include sm-down {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+.filled-btn,
+.outlined-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.filled-btn {
+  background-color: $blue-600;
+  color: #fff;
+  border-radius: 50px;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  color: $white-color;
+}
+
+.outlined-btn {
+  background-color: transparent;
+  border: 2px solid $blue-gray-6;
+  border-radius: 50px;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  color: $blue-gray-6;
+}
+//eighteen component
+.eighteen-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 5rem;
+  padding-inline: 20px;
+}
+.eighteen-container span {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $primary-700;
+  @include sm-down {
+    font-size: 0.875rem;
+  }
+}
+.eighteen-container h1 {
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: $gray-900;
+  @include sm-down {
+    font-size: 1.875rem;
+  }
+}
+.eighteen-container p {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-500;
+
+  @include sm-down {
+    font-size: 1.125rem;
+  }
+}
+.eighteen-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  gap: 1rem;
+
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}
+.eighteen-left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.overall-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+  gap: 2rem;
+
+  align-items: center;
+  justify-content: center;
+  @include sm-down {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}
+.single-feature span {
+  font-family: Inter;
+  font-size: 3.75rem;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  color: $primary-600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  @include sm-down {
+    font-size: 3rem;
+  }
+}
+.single-feature h3 {
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-900;
+}
+.single-feature p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-500;
+}
+.eighteen-right-section {
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.eighteen-right-section img {
+  max-width: 100%;
+  height: auto;
+}
+//nineteen component
+.nineteen-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.nineteen-container span {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  color: $blue-600;
+}
+.nineteen-container h1 {
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -2px;
+  text-align: center;
+  color: $base-2;
+  @include sm-down {
+    font-size: 2rem;
+    line-height: 42px;
+  }
+}
+.unlimited-feature-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-inline: 20px;
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.unlimited-feature {
+  border-width: 0px, 0px, 0px, 0px;
+  border-style: solid;
+  border-color: #e4e4e7;
+  border-radius: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-inline: 20px;
+  padding-block: 35px;
+}
+.unlimited-feature img {
+  max-width: 15.75px;
+  height: 15.75px;
+}
+
+.unlimited-feature p {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-900;
+}
+//twenty component
