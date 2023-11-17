@@ -528,15 +528,20 @@ a:hover {
 .my-button:hover {
   background-color: #2980b9;
 }
-.feature {
+.plan-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.plan-feature {
   display: flex;
   gap: 1rem;
 }
-.feature img {
+.plan-feature img {
   max-width: 24px;
   height: 24px;
 }
-.feature p {
+.plan-feature p {
   font-family: Inter;
   font-size: 1rem;
   font-weight: 400;
@@ -968,8 +973,8 @@ a:hover {
 }
 .signup-btn {
   display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   background-color: $blue-gray-8;
   color: $white-color;
@@ -1200,6 +1205,10 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   text-align: left;
   color: $blue-500;
 }
+.feature {
+  display: flex;
+  gap: 10px;
+}
 .feature p {
   font-family: Inter;
   font-size: 1rem;
@@ -1208,6 +1217,10 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   letter-spacing: 0px;
   text-align: left;
   color: $blue-900;
+}
+.feature img {
+  max-width: 24px;
+  height: 24px;
 }
 .annual-container {
   background-color: $white-color;
@@ -1910,3 +1923,477 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   color: $gray-900;
 }
 //twenty component
+.twenty-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.twenty-header span {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $primary-600;
+}
+.twenty-header h1 {
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: $gray-900;
+  @include sm-down {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
+.twenty-header p {
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-500;
+}
+.form {
+  display: flex;
+  gap: 10px;
+  @include sm-down {
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 20px;
+  }
+}
+.email-input {
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border: 1px solid $gray-300;
+  border-radius: 8px;
+  background-color: $white-color;
+  padding: 20px;
+}
+.email-input::placeholder {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-500;
+}
+.subscribe {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid $primary-600;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  background-color: $primary-600;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: $white-color;
+}
+.recent-blog {
+  margin-top: 2rem;
+  padding-inline: 20px;
+}
+.second-blog-post {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-900;
+  margin-bottom: 1.5rem;
+  @include md-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.blog-post {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-900;
+  margin-bottom: 1.5rem;
+  @include lg-down {
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.recent-blog-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1rem;
+  @include lg-down {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.blog-head {
+  display: flex;
+  justify-content: space-between;
+}
+.badge-container {
+  display: flex;
+  gap: 20px;
+  @include sm-down {
+    gap: 5px;
+  }
+}
+.badge-container img {
+  max-width: 63px;
+  height: 20px;
+}
+.recent-blog-left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.post1 {
+  max-width: 100%;
+  height: auto;
+}
+.recent-blog-left-section span {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $primary-700;
+}
+.blog-head h1 {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-900;
+}
+.blog-head img {
+  max-width: 24px;
+  height: 24px;
+}
+.recent-blog-left-section p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-500;
+}
+.twenty-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.twenty-right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.twenty-left-section img {
+  max-width: 100%;
+  height: auto;
+}
+.twenty-right-section span {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $primary-700;
+}
+.twenty-right-section h1 {
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-900;
+}
+.twenty-right-section p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray-500;
+}
+.twenty-card-container {
+  display: grid;
+  row-gap: 1.5rem;
+}
+.all-blog-post {
+  margin-top: 3rem;
+  padding-inline: 20px;
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  row-gap: 1rem;
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+//twenty one component
+.twenty-one-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding-inline: 20px;
+  @include md-down {
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.customer-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  @include sm-down {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 1rem;
+  }
+}
+.customer-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.customer-feature h3 {
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: $blue-900;
+}
+.customer-feature p {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-600;
+}
+.twenty-one-right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.twenty-one-right-section h1 {
+  font-family: Inter;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: -4px;
+  text-align: left;
+  color: $blue-900;
+  @include lg-down {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  @include sm-down {
+    font-size: 2.5rem;
+  }
+}
+.twenty-one-right-section p {
+  font-family: Inter;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $gray-600;
+  margin-bottom: 2rem;
+  @include lg-down {
+    font-size: 1rem;
+  }
+}
+.twenty-one-left-section img {
+  height: 617px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  @include md-down {
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid $blue-200;
+  border-radius: 12px;
+  padding: 10px;
+
+  max-width: 534px;
+  height: auto;
+  @include sm-down {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  @include sm-down {
+    width: 100%;
+  }
+}
+
+.input-container button {
+  background-color: $primary-1;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 10px;
+  gap: 10px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $white-color;
+
+  @include sm-down {
+    width: 100%;
+  }
+}
+.input-container button:hover {
+  border: 2px solid $gray-900;
+  background-color: transparent;
+  color: $gray-900;
+}
+.input-container input::placeholder {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $blue-500;
+}
+//twenty two component
+.twenty-two-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-inline: 20px;
+  @include md-down {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin: auto;
+  }
+  @include sm-down {
+    width: 100%;
+    margin: auto;
+  }
+}
+.twenty-two-left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+.twenty-two-left-section h1 {
+  font-family: Inter;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: -4px;
+  text-align: left;
+  color: $blue-900;
+  @include lg-down {
+    font-size: 3rem;
+  }
+  @include sm-down {
+    font-size: 2.5rem;
+    line-height: 56px;
+  }
+}
+.twenty-two-left-section p {
+  font-family: Inter;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: $black-600;
+}
+.landfolio-btn {
+  background-color: $primary-1;
+  border: none;
+  cursor: pointer;
+  padding: 16px 24px 16px 24px;
+  border-radius: 8px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: $white-color;
+  max-width: 259px;
+  height: auto;
+}
+.twenty-two-right-section img {
+  width: 100%;
+  height: auto;
+}
