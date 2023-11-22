@@ -856,11 +856,45 @@ a:hover {
   gap: 1rem;
   margin-top: 5rem;
   padding-inline: 20px;
+  position: relative;
 }
 @media (max-width: 767px) {
   .plan-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.popular-label {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -2rem;
+  margin-right: -4rem;
+  color: #6941C6;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+@media (max-width: 575px) {
+  .popular-label {
+    top: 0;
+    right: 20%;
+    margin-top: -2rem;
+    text-align: center;
+  }
+}
+
+.popular-label img {
+  max-width: 61.96px;
+  height: 50px;
+  margin-right: 2px;
 }
 
 .seven-container {
@@ -1854,6 +1888,33 @@ input[type=checkbox]:checked + .custom-checkbox::after {
   height: 32px;
 }
 
+.swiper-container {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .technology-container img {
+    display: none;
+  }
+  .swiper-container {
+    display: block;
+  }
+  .mySwiper {
+    width: 100%;
+    margin: auto;
+  }
+  .swiper-slide {
+    text-align: center;
+  }
+  .logo-1,
+  .logo-2,
+  .logo-3,
+  .logo-4,
+  .logo-5 {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .fifteen-Card-Detail h3 {
   font-family: Inter;
   font-size: 1.25rem;
@@ -2468,13 +2529,8 @@ input[type=checkbox]:checked + .custom-checkbox::after {
 .form {
   display: flex;
   gap: 10px;
-}
-@media (max-width: 575px) {
-  .form {
-    flex-direction: column;
-    width: 100%;
-    padding-inline: 20px;
-  }
+  flex-wrap: wrap;
+  padding-inline: 20px;
 }
 
 .email-input {
@@ -2482,7 +2538,15 @@ input[type=checkbox]:checked + .custom-checkbox::after {
   border: 1px solid #D0D5DD;
   border-radius: 8px;
   background-color: #FFFFFF;
-  padding: 20px;
+  width: 360px;
+  height: 48px;
+}
+@media (max-width: 575px) {
+  .email-input {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 }
 
 .email-input::-moz-placeholder {
@@ -2519,6 +2583,15 @@ input[type=checkbox]:checked + .custom-checkbox::after {
   line-height: 24px;
   letter-spacing: 0em;
   color: #FFFFFF;
+  width: 118px;
+  height: 48px;
+}
+@media (max-width: 575px) {
+  .subscribe {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 }
 
 .recent-blog {
@@ -2737,6 +2810,31 @@ input[type=checkbox]:checked + .custom-checkbox::after {
     width: 100%;
     margin: auto;
   }
+}
+
+.privacy-paragraph {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #667085;
+}
+@media (max-width: 575px) {
+  .privacy-paragraph {
+    padding-inline: 20px;
+  }
+}
+
+.privacy-paragraph a {
+  color: #667085;
+}
+
+.form-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .twenty-one-container {

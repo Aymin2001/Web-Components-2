@@ -229,6 +229,10 @@
 
       <div class="plan-container">
         <div class="plan">
+          <div class="popular-label">
+            <img src="./assetts/Hand-drawn arrow.png" alt="Most Popular" />
+            <p>Most popular!</p>
+          </div>
           <h2>$10/mth</h2>
           <div class="type">
             <span>Basic plan</span>
@@ -600,6 +604,36 @@
         <img class="logo-4" src="./assetts//Company logo 3.png" />
         <img class="logo-5" src="./assetts/company-logo 4.png" />
       </div>
+
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="center-container">
+              <img class="logo-1" src="./assetts//Company logo.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="center-container">
+              <img class="logo-2" src="./assetts/Company logo 1.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="center-container">
+              <img class="logo-3" src="./assetts/Company logo 2.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="center-container">
+              <img class="logo-4" src="./assetts//Company logo 3.png" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="center-container">
+              <img class="logo-5" src="./assetts/company-logo 4.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- fifteen component -->
     <div class="fifteen-container container">
@@ -885,9 +919,21 @@
           Subscribe to learn about new product features, the latest in
           technology, solutions, and updates.
         </p>
-        <div class="form">
-          <input class="email-input" placeholder="Enter your email" required />
-          <button class="subscribe">Subscribe</button>
+        <div class="form-containers">
+          <div class="form">
+            <input
+              class="email-input"
+              placeholder="Enter your email"
+              required
+            />
+            <button class="subscribe">Subscribe</button>
+          </div>
+          <p class="privacy-paragraph">
+            We care about your data in our
+            <a href="/privacy-policy" target="_blank" rel="noopener noreferrer"
+              >privacy policy</a
+            >
+          </p>
         </div>
       </div>
 
@@ -1115,6 +1161,13 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

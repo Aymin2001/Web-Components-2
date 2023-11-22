@@ -611,11 +611,42 @@ a:hover {
   gap: 1rem;
   margin-top: 5rem;
   padding-inline: 20px;
-
+  position: relative;
   @include md-down {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.popular-label {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -2rem;
+  margin-right: -4rem;
+  color: $primary-700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  @include sm-down {
+    top: 0;
+    right: 20%;
+    margin-top: -2rem;
+    text-align: center;
+  }
+}
+
+.popular-label img {
+  max-width: 61.96px;
+  height: 50px;
+  margin-right: 2px;
+}
+
 // seven component
 .seven-container {
   background-image: url("../assetts/BG2.png");
@@ -1443,6 +1474,37 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   max-width: 124.67px;
   height: 32px;
 }
+.swiper-container {
+  display: none;
+}
+
+@include sm-down {
+  .technology-container img {
+    display: none;
+  }
+
+  .swiper-container {
+    display: block;
+  }
+
+  .mySwiper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .logo-1,
+  .logo-2,
+  .logo-3,
+  .logo-4,
+  .logo-5 {
+    max-width: 100%;
+    height: auto;
+  }
+}
 //fifteen component
 .fifteen-Card-Detail h3 {
   font-family: Inter;
@@ -1965,18 +2027,21 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 .form {
   display: flex;
   gap: 10px;
-  @include sm-down {
-    flex-direction: column;
-    width: 100%;
-    padding-inline: 20px;
-  }
+  flex-wrap: wrap;
+  padding-inline: 20px;
 }
 .email-input {
   box-shadow: 0px 1px 2px 0px #1018280d;
   border: 1px solid $gray-300;
   border-radius: 8px;
   background-color: $white-color;
-  padding: 20px;
+  width: 360px;
+  height: 48px;
+  @include sm-down {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 }
 .email-input::placeholder {
   font-family: Inter;
@@ -2001,6 +2066,13 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   line-height: 24px;
   letter-spacing: 0em;
   color: $white-color;
+  width: 118px;
+  height: 48px;
+  @include sm-down {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
 }
 .recent-blog {
   margin-top: 2rem;
@@ -2177,6 +2249,26 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     width: 100%;
     margin: auto;
   }
+}
+.privacy-paragraph {
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $gray-500;
+  @include sm-down {
+    padding-inline: 20px;
+  }
+}
+.privacy-paragraph a {
+  color: $gray-500;
+}
+.form-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 //twenty one component
 .twenty-one-container {
